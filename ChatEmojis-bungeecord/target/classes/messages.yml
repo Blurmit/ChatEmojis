@@ -1,0 +1,4 @@
+emojis-message:
+  - "&dServer Emojis (&e&l%emojis_amount%&d):"
+  - "&d%emojis%"
+reload-message: "&aComplete! Finished reloading ChatEmojis."
