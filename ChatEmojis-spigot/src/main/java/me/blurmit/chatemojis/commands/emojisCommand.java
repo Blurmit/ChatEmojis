@@ -35,8 +35,8 @@ public class emojisCommand implements CommandExecutor
 
             for (String emojisList : EmojisPlugin.messages.getStringList("emojis-message"))
             {
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', emojisList
-                        .replaceAll("%emojis_amount%", String.valueOf(emojisAmount)))
+                EmojisPlugin.messagesUtil.sendColoredMessage(sender, emojisList
+                        .replaceAll("%emojis_amount%", String.valueOf(emojisAmount))
                         .replaceAll("%emojis%", ChatColor.translateAlternateColorCodes('&', emojisLister.toString())));
             }
         }
@@ -68,8 +68,8 @@ public class emojisCommand implements CommandExecutor
 
                 for (String emojisList : EmojisPlugin.messages.getStringList("emojis-message"))
                 {
-                    sender.sendMessage(ChatColor.translateAlternateColorCodes('&', emojisList
-                                    .replaceAll("%emojis_amount%", String.valueOf(emojisAmount)))
+                    EmojisPlugin.messagesUtil.sendColoredMessage(sender, emojisList
+                            .replaceAll("%emojis_amount%", String.valueOf(emojisAmount))
                             .replaceAll("%emojis%", ChatColor.translateAlternateColorCodes('&', emojisLister.toString())));
                 }
             }
@@ -95,8 +95,8 @@ public class emojisCommand implements CommandExecutor
 
             for (String emojisList : EmojisPlugin.messages.getStringList("emojis-message"))
             {
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', emojisList
-                                .replaceAll("%emojis_amount%", String.valueOf(emojisAmount)))
+                EmojisPlugin.messagesUtil.sendColoredMessage(sender, emojisList
+                        .replaceAll("%emojis_amount%", String.valueOf(emojisAmount))
                         .replaceAll("%emojis%", ChatColor.translateAlternateColorCodes('&', emojisLister.toString())));
             }
         }
