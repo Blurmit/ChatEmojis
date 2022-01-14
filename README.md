@@ -13,6 +13,7 @@ ChatEmojis is a plugin that allows you to use emojis in Minecraft chat!
 * In the config.yml, you should see the default emojis.
 * Under the last emoji, add a new line and past in your emoji!
 * Example: `:shark:, 🦈`
+* Finally, run `/emojis reload` in-game and try out your new emoji!
           
 
 ## Features:
