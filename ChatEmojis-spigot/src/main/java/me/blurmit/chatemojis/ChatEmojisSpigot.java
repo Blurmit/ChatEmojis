@@ -16,7 +16,8 @@ import net.md_5.bungee.config.YamlConfiguration;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class ChatEmojisSpigot extends JavaPlugin {
+public final class ChatEmojisSpigot extends JavaPlugin
+{
 
     public Configuration config;
     public Configuration messages;
