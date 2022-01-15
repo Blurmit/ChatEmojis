@@ -16,8 +16,7 @@ import net.md_5.bungee.config.YamlConfiguration;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class ChatEmojisSpigot extends JavaPlugin
-{
+public final class ChatEmojisSpigot extends JavaPlugin {
 
     public Configuration config;
     public Configuration messages;
@@ -85,6 +84,19 @@ public final class ChatEmojisSpigot extends JavaPlugin
 
         } catch (IOException e) {
             getLogger().severe("Failed to reload the configuration!");
+            e.printStackTrace();
+        }
+    }
+
+    public void saveConfig()
+    {
+        try {
+
+            ConfigurationProvider.getProvider(YamlConfiguration.class).save(config, configFile);
+            ConfigurationProvider.getProvider(YamlConfiguration.class).save(messages, messagesFile);
+
+        } catch (IOException e) {
+            getLogger().severe("Failed to save the configuration!");
             e.printStackTrace();
         }
     }

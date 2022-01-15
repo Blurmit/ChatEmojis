@@ -1,10 +1,9 @@
 name: ChatEmojis
 version: '${project.version}'
 main: me.blurmit.chatemojis.ChatEmojisSpigot
-authors: [ Blurmit ]
+author: Blurmit
 description: Allows players to use emojis in chat.
 api-version: 1.13
 commands:
   emojis:
     description: Main command for ChatEmojis plugin.
-    aliases: [ emoji ]

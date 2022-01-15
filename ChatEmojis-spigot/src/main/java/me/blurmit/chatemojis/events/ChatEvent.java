@@ -14,20 +14,20 @@ public class ChatEvent implements Listener
     public void onChat(AsyncPlayerChatEvent event)
     {
         String message = event.getMessage();
-        int emojisAmount = EmojisPlugin.config.getStringList("Emojis").size();
-        String emojis;
-        String[] translateEmoji;
-        String emoji;
-        String emojiTranslation;
-
-        for(int i = 0; i < emojisAmount; ++i)
+        if (!message.startsWith("/emojis"))
         {
-            emojis = EmojisPlugin.config.getStringList("Emojis").get(i);
-            translateEmoji = emojis.split(", ");
-            emoji = translateEmoji[0];
-            emojiTranslation = translateEmoji[1];
-            message = message.replaceAll(emoji, emojiTranslation);
+            String[] translateEmoji;
+            String emoji;
+            String emojiTranslation;
+
+            for (String emojiList : EmojisPlugin.config.getStringList("Emojis"))
+            {
+                translateEmoji = emojiList.split(", ");
+                emoji = translateEmoji[0];
+                emojiTranslation = translateEmoji[1];
+                message = message.replaceAll(emoji, emojiTranslation);
+            }
+            event.setMessage(message);
         }
-        event.setMessage(message);
     }
 }
