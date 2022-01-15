@@ -1,4 +1,7 @@
 emojis-message:
-  - "&dServer Emojis (&e&l%emojis_amount%&d):"
-  - "&d%emojis%"
+  - "&dServer Emojis (&e&l{emojis_amount}&d):"
+  - "&d{emojis}"
 reload-message: "&aComplete! Finished reloading ChatEmojis."
+add-message: "&aSuccess! Added the {emoji} emoji."
+remove-message: "&aSuccess! Removed the {emoji} emoji."
+remove-error: "&cError! The emoji {emoji} either does not exist and/or is invalid."

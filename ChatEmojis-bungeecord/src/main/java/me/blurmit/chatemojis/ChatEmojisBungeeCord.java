@@ -87,6 +87,19 @@ public final class ChatEmojisBungeeCord extends Plugin {
         }
     }
 
+    public void saveConfig()
+    {
+        try {
+
+            ConfigurationProvider.getProvider(YamlConfiguration.class).save(config, configFile);
+            ConfigurationProvider.getProvider(YamlConfiguration.class).save(messages, messagesFile);
+
+        } catch (IOException e) {
+            getLogger().severe("Failed to save the configuration!");
+            e.printStackTrace();
+        }
+    }
+
     public static ChatEmojisBungeeCord getInstance()
     {
         return instance;
