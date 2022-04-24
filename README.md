@@ -9,14 +9,13 @@ ChatEmojis is a plugin that allows you to use emojis in Minecraft chat!
 * Done
 
 ## Adding Emojis:
-* Run `/emojis add :emoji_name: emoji_translation`.
-* Quick things to note, `emoji_translation` is what the emoji will translate to when typed in-game.
-* `:emoji_name:` is the exact string a player will need to type in-game for it to be translated into an emoji.
+* Run `/addemoji <emoji name> <emoji trnaslation>`.
+* Quick things to note, `emoji translation` is what the emoji will translate to when typed in-game.
+* `emoji name` is the string that the player will need to type in-game for it to be translated into an emoji.
 * Done!
 
 ## Removing Emojis:
-* Run `/emojis remove :emoji_name:`.
-* Quick things to note, the `:emoji_name:` MUST contain the semi-colon otherwise it will not delete.
+* Run `/removeemoji <emoji name>`.
 * Done!
           
 
