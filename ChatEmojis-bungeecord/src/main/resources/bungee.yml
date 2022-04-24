@@ -1,5 +1,0 @@
-name: ChatEmojis
-version: '${project.version}'
-main: me.blurmit.chatemojis.ChatEmojisBungeeCord
-description: Allows players to use emojis in chat.
-author: Blurmit
