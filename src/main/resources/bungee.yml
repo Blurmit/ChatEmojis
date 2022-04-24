@@ -1,0 +1,5 @@
+name: ChatEmojis
+version: '${project.version}'
+main: me.blurmit.chatemojis.bungeecord.ChatEmojis
+author: Blurmit
+description: A plugin that emojis to Minecraft chat!

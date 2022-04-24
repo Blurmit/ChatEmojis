@@ -1,0 +1,14 @@
+name: ChatEmojis
+version: '${project.version}'
+main: me.blurmit.chatemojis.spigot.ChatEmojis
+api-version: 1.13
+author: Blurmit
+description: A plugin that emojis to Minecraft chat!
+website: https://blurmit.ml
+commands:
+  addemoji:
+    description: Adds an emoji
+  removeemoji:
+    description: Removes an emoji
+  emojis:
+    description: Lists the current emojis
