@@ -11,7 +11,7 @@ import java.io.*;
 public class ConfigManager {
 
     private final ChatEmojis plugin;
-    private File configurationFile;
+    private final File configurationFile;
     private Configuration configuration;
 
     public ConfigManager(ChatEmojis plugin) {
@@ -27,8 +27,6 @@ public class ConfigManager {
         if (!plugin.getDataFolder().exists()) {
             plugin.getDataFolder().mkdir();
         }
-
-        configurationFile = new File(plugin.getDataFolder(), "config.yml");
 
         if (!configurationFile.exists()) {
             try {
